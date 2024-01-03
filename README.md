@@ -1,0 +1,34 @@
+**Description**
+
+The point of this project is to add a frontend to make it possible to interact with a LLM locally through a chat. 
+Ollama is used to run a model locally. 
+
+The frontend was built using nodejs framework. 
+
+
+**How to use it** 
+
+The project works only on Linux distributions at the moment. Indeed, Ollama is only available for Linux, macOS and Windows WSL. Also, macOS and WSL have not been tested.  
+
+1. Make sure to have [Ollama](https://github.com/jmorganca/ollama) and [nodejs](https://nodejs.org/en/download/package-manager) installed on your Linux environment.
+1. Download at least one model using Ollama API (below, Phi is the lightest model):  
+```
+$ ollama pull phi 
+```
+1. Clone the repository locally : 
+```
+$ git clone xxx
+```
+1. Launch the server with the following terminal command : 
+```
+$ cd chat_assistant/frontend
+$ node app.js 
+```
+1. Connect to the port 3000 of your localhost on your browser (app tested on Chrome 120.0.6099.129 (Official Build) (64-bit)) : http://localhost:3000/.
+1. You can now try to interact with the models that you have installed locally ! 
+
+
+**Current limitations** 
+
+Limitations : 
+- No history is stored, as no database connector have been implemented. 

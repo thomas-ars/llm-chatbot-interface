@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="styles.css">
+
+<body>
+
+  <!-- Title -->
+  <div class="title">
+    <h2>Local LLM interaction</h2>
+  </div>
+
+  <!-- Dropdown for LLM selection -->
+  <div id="modelSelector">
+    <select id="llmSelect" onchange="selectLLM()">
+      <option value="" selected disabled>Select an LLM</option>
+    </select>
+  </div>
+
+  <!-- Container for chat messages -->
+  <div class="container">
+    <div class="chat-container" id="chatContainer">
+      <!-- Chat messages will be dynamically added here -->
+    </div>
+  </div>
+
+
+  <!-- Input section for user questions -->
+  <div id="inputSection" class="input-section">
+    <div class="questionInput">
+      <input type="text" id="userQuestion" placeholder="Enter your prompt .. ">
+      <button onclick="submitQuery()">Generate</button>
+      <div class="loader" id="loader" style="display: none;"></div>
+    </div>
+  </div>
+
+
+  <script src="scripts.js"></script>
+  </div>
+</body>
+
+</html>
