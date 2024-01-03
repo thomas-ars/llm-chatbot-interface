@@ -11,26 +11,26 @@ The frontend was built using nodejs framework.
 The project works only on Linux distributions at the moment. Indeed, Ollama is only available for Linux, macOS and Windows WSL. Also, macOS and WSL have not been tested.  
 
 1. Make sure to have [Ollama](https://github.com/jmorganca/ollama) and [nodejs](https://nodejs.org/en/download/package-manager) installed on your Linux environment.
-1. Download at least one model using Ollama API (below, Phi is the lightest model):  
+2. Download at least one model using Ollama API (below, Phi is the lightest model):  
 ```bash
 $ ollama pull phi 
 ```
-1. Clone the repository locally : 
+3. Clone the repository locally : 
 ```bash
 $ git clone git@github.com:thomasaurousseau-coding/llm-chatbot-interface.git
 ```
-1. Go to the frontend directory, and install the npm dependencies : 
+4. Go to the frontend directory, and install the npm dependencies : 
 ```bash
 $ cd frontend
 $ npm install
 ```
-1. Launch the server with the following terminal command : 
+5. Launch the server with the following terminal command : 
 ```bash
 $ cd frontend
 $ node app.js 
 ```
-1. Connect to the port 3000 of your localhost on your browser (app tested on Chrome 120.0.6099.129 (Official Build) (64-bit)) : http://localhost:3000/.
-1. You can now try to interact with the models that you have installed locally ! 
+6. Connect to the port 3000 of your localhost on your browser (app tested on Chrome 120.0.6099.129 (Official Build) (64-bit)) : http://localhost:3000/.
+7. You can now try to interact with the models that you have installed locally ! 
 
 
 **Current limitations** 
