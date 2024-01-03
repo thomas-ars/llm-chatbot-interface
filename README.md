@@ -30,7 +30,8 @@ $ cd frontend
 $ node app.js 
 ```
 6. Connect to the port 3000 of your localhost on your browser (app tested on Chrome 120.0.6099.129 (Official Build) (64-bit)) : http://localhost:3000/.
-7. You can now try to interact with the models that you have installed locally ! 
+7. You can now try to interact with the models that you have installed locally ! ![Here is an example](images/example_chat.png)
+
 
 
 **Current limitations** 
