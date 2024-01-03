@@ -12,16 +12,21 @@ The project works only on Linux distributions at the moment. Indeed, Ollama is o
 
 1. Make sure to have [Ollama](https://github.com/jmorganca/ollama) and [nodejs](https://nodejs.org/en/download/package-manager) installed on your Linux environment.
 1. Download at least one model using Ollama API (below, Phi is the lightest model):  
-```
+```bash
 $ ollama pull phi 
 ```
 1. Clone the repository locally : 
+```bash
+$ git clone git@github.com:thomasaurousseau-coding/llm-chatbot-interface.git
 ```
-$ git clone xxx
+1. Go to the frontend directory, and install the npm dependencies : 
+```bash
+$ cd frontend
+$ npm install
 ```
 1. Launch the server with the following terminal command : 
-```
-$ cd chat_assistant/frontend
+```bash
+$ cd frontend
 $ node app.js 
 ```
 1. Connect to the port 3000 of your localhost on your browser (app tested on Chrome 120.0.6099.129 (Official Build) (64-bit)) : http://localhost:3000/.
