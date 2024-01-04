@@ -11,9 +11,10 @@ The frontend was built using nodejs framework.
 The project works only on Linux distributions at the moment. Indeed, Ollama is only available for Linux, macOS and Windows WSL. Also, macOS and WSL have not been tested.  
 
 1. Make sure to have [Ollama](https://github.com/jmorganca/ollama) and [nodejs](https://nodejs.org/en/download/package-manager) installed on your Linux environment.
-2. Download at least one model using Ollama API (below, Phi is the lightest model):  
+2. Download at least one model using Ollama API (below, Phi is the lightest model), and launch ollama (it may be launched by default when requested depending on your OS): 
 ```bash
 $ ollama pull phi 
+$ ollama serve
 ```
 3. Clone the repository locally : 
 ```bash
